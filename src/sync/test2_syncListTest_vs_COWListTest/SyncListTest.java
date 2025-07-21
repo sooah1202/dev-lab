@@ -1,4 +1,4 @@
-package test2_syncListTest_vs_COWListTest;
+package sync.test2_syncListTest_vs_COWListTest;
 
 import java.util.ArrayList;
 import java.util.Collections;

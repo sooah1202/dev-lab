@@ -1,4 +1,4 @@
-package test2_syncListTest_vs_COWListTest;
+package sync.test2_syncListTest_vs_COWListTest;
 
 public class CopyOnWriteArrayList {
 	public static void main(String[] args) {
