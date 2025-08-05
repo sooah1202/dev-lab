@@ -1,13 +1,8 @@
-package sync.test2_syncListTest_vs_COWListTest;
+package main.sync.test2_syncListTest_vs_COWListTest.test2_syncListTest_vs_COWListTest;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-public class SyncListTest {
-
+public class CopyOnWriteArrayList {
 	public static void main(String[] args) {
-		List<String> list = Collections.synchronizedList(new ArrayList<>());
+		java.util.concurrent.CopyOnWriteArrayList<String> list = new java.util.concurrent.CopyOnWriteArrayList<>();
 		list.add("A");
 		list.add("B");
 		list.add("C");
@@ -16,8 +11,7 @@ public class SyncListTest {
 			try {
 				Thread.sleep(10);
 				list.add("D");
-			}
-			catch(InterruptedException e) {
+			} catch(InterruptedException e) {
 				e.printStackTrace();
 			}
 		}).start();

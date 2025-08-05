@@ -1,4 +1,4 @@
-package thread;
+package main.thread;
 
 public class ThreadStateTest_Notify {
 

@@ -1,4 +1,4 @@
-package sync.test1_singleton_vs_sync;
+package main.sync.test1_singleton_vs_sync;
 
 public class SyncTestWorker implements Runnable
 {
